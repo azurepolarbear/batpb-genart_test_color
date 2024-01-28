@@ -1,0 +1,64 @@
+{
+  "name": "gen-art-test_color",
+  "version": "0.0.1",
+  "description": "A repository for testing colors in brittni and the polar bear's generative art library.",
+  "main": "",
+  "scripts": {
+    "build": "rm -r ./out; rollup --config",
+    "start": "rm -r ./out; rollup --config --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azurepolarbear/gen-art-test_color.git"
+  },
+  "keywords": [
+    "code art",
+    "generative art",
+    "p5",
+    "p5.js",
+    "p5js",
+    "template",
+    "typescript"
+  ],
+  "author": {
+    "name": "brittni and the polar bear",
+    "url": "https://linktr.ee/brittniandthepolarbear"
+  },
+  "contributors": [
+    {
+      "name": "brittni watkins",
+      "url": "https://linktr.ee/brittniwatkins"
+    },
+    {
+      "name": "azurepolarbear",
+      "url": "https://linktr.ee/azurepolarbear"
+    }
+  ],
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/azurepolarbear/gen-art-test_color/issues"
+  },
+  "homepage": "https://github.com/azurepolarbear/gen-art-test_color#readme",
+  "dependencies": {
+    "@batpb/genart": "^0.0.1",
+    "@types/p5": "^1.7.6",
+    "p5": "^1.9.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-eslint": "^9.0.5",
+    "@rollup/plugin-html": "^1.0.3",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "rollup": "^4.9.1",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-serve": "^1.1.1",
+    "rollup-plugin-zip": "^1.0.3"
+  }
+}
