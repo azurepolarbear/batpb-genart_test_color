@@ -1,6 +1,6 @@
 {
-  "name": "gen-art-test_color",
-  "version": "0.0.1",
+  "name": "batpb-genart_test_color",
+  "version": "1.0.0",
   "description": "A repository for testing colors in brittni and the polar bear's generative art library.",
   "main": "",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azurepolarbear/gen-art-test_color.git"
+    "url": "git+https://github.com/azurepolarbear/batpb-genart_test_color.git"
   },
   "keywords": [
     "code art",
@@ -36,16 +36,15 @@
   ],
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/azurepolarbear/gen-art-test_color/issues"
+    "url": "https://github.com/azurepolarbear/batpb-genart_test_color/issues"
   },
-  "homepage": "https://github.com/azurepolarbear/gen-art-test_color#readme",
+  "homepage": "https://github.com/azurepolarbear/batpb-genart_test_color#readme",
   "dependencies": {
-    "@batpb/genart": "^0.0.1",
-    "@batpb/genart-base": "file:~/Desktop/npm-test/batpb-genart-base-0.1.0.tgz",
+    "@batpb/genart": "^0.4.1",
     "@types/p5": "^1.7.6",
     "p5": "^1.9.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
@@ -54,12 +53,11 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.5",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
-    "rollup": "^4.9.1",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "rollup": "^4.13.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-css-only": "^4.5.2",
-    "rollup-plugin-serve": "^1.1.1",
-    "rollup-plugin-zip": "^1.0.3"
+    "rollup-plugin-serve": "^1.1.1"
   }
 }
