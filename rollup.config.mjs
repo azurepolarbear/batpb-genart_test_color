@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2023-2024 Brittni Watkins.
  *
- * This file is a part of brittni and the polar bear's Generative Art Project Template,
+ * This file is a part of brittni and the polar bear's Generative Art Library,
  * which is released under the GNU Affero General Public License, Version 3.0.
  * You may not use this file except in compliance with the license.
  *
@@ -17,7 +17,7 @@
 
 import typescript from '@rollup/plugin-typescript';
 import commonjs from '@rollup/plugin-commonjs';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import nodeResolve from '@rollup/plugin-node-resolve';
 import eslint from '@rollup/plugin-eslint';
 import terser from '@rollup/plugin-terser';
 import css from 'rollup-plugin-css-only';

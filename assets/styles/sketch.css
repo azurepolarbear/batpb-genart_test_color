@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2023-2024 Brittni Watkins.
  *
- * This file is a part of brittni and the polar bear's Generative Art Project Template,
+ * This file is a part of brittni and the polar bear's Generative Art Library,
  * which is released under the GNU Affero General Public License, Version 3.0.
  * You may not use this file except in compliance with the license.
  *
@@ -23,6 +23,20 @@ html, body {
     border: none;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 canvas {
-    display: block;
+    grid-row: 1;
+    grid-column: 1;
 }
