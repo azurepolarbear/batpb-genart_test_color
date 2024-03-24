@@ -57,6 +57,12 @@ function sketch(p5: P5Lib): void {
 
         const selector: ColorSelector | undefined = manager.getRandomColorSelector();
 
+        if (selector) {
+            console.log(`palette selector = ${selector.hasPalette}`);
+            console.log(`selector name = ${selector.name}`);
+            console.log(`color names = ${selector.colorNames}`);
+        }
+
         for (let row: number = 0; row < gridSize; row++) {
             for (let col: number = 0; col < gridSize; col++) {
                 const x: number = (col * cellSize) + (cellSize / 2.0);
