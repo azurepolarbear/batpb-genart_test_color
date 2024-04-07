@@ -41,8 +41,9 @@ function sketch(p5: P5Lib): void {
     let background: Color;
 
     p5.setup = (): void => {
-        const canvasSize: number = p5.min(p5.windowWidth, p5.windowHeight);
-        p5.createCanvas(canvasSize, canvasSize);
+        // const canvasSize: number = p5.min(p5.windowWidth, p5.windowHeight);
+        // p5.createCanvas(canvasSize, canvasSize);
+        p5.createCanvas(p5.windowWidth, p5.windowHeight);
         SketchContext.initialize(p5);
         cellSize = p5.width / gridSize;
 
