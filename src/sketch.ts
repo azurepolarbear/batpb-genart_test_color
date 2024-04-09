@@ -32,6 +32,8 @@ type Shape = 'circle' | 'square';
 
 function sketch(p5: P5Lib): void {
     const gridSize: number = Random.randomInt(4, 40);
+    let rows: number;
+    let cols: number;
     let cellSize: number;
     const xs: number[] = [];
     const ys: number[] = [];
@@ -46,6 +48,8 @@ function sketch(p5: P5Lib): void {
         p5.createCanvas(p5.windowWidth, p5.windowHeight);
         SketchContext.initialize(p5);
         cellSize = p5.width / gridSize;
+        cols = gridSize;
+        rows = p5.ceil(p5.height / cellSize);
 
         if (Random.randomBoolean()) {
             background = new Color(p5.color(255));
@@ -64,8 +68,8 @@ function sketch(p5: P5Lib): void {
             console.log(`color names = ${selector.colorNames}`);
         }
 
-        for (let row: number = 0; row < gridSize; row++) {
-            for (let col: number = 0; col < gridSize; col++) {
+        for (let row: number = 0; row < rows; row++) {
+            for (let col: number = 0; col < cols; col++) {
                 const x: number = (col * cellSize) + (cellSize / 2.0);
                 const y: number = (row * cellSize) + (cellSize / 2.0);
                 const size: number = Random.randomFloat(cellSize * 0.5, cellSize * 2);
@@ -97,7 +101,7 @@ function sketch(p5: P5Lib): void {
 
     p5.draw = () : void => {
         p5.background(background.color);
-        for (let i: number = 0; i < gridSize * gridSize; i++) {
+        for (let i: number = 0; i < rows * cols; i++) {
             p5.fill(colors[i].color);
             p5.noStroke();
 
